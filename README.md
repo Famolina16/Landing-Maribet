@@ -14,4 +14,4 @@ Luego abrir `http://localhost:4173`.
 
 ## Formulario
 
-El formulario está preparado para Netlify Forms. Una vez desplegado el sitio, habilitar una notificación de formularios hacia `famolina16@gmail.com` desde el panel de Netlify para recibir las consultas por correo.
+El formulario está preparado para Netlify Forms. Una vez desplegado el sitio, habilitar una notificación de formularios hacia `Marisamazars@hotmail.com` desde el panel de Netlify para recibir las consultas por correo.
