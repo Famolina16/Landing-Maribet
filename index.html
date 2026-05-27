@@ -143,52 +143,106 @@
 
           <div class="gallery">
             <figure class="project-card project-wide reveal">
-              <img
-                src="assets/images/cocina-a-medida-01.jpg"
-                alt="Cocina blanca con alacenas oscuras fabricada a medida"
-                loading="lazy"
+              <button
+                class="project-trigger"
+                type="button"
+                data-lightbox-trigger
+                data-category="Cocinas"
+                data-caption="Diseño integral"
+                aria-label="Ampliar imagen: cocina, diseño integral"
               >
-              <figcaption><span>Cocinas</span>Diseño integral</figcaption>
+                <img
+                  src="assets/images/cocina-a-medida-01.jpg"
+                  alt="Cocina blanca con alacenas oscuras fabricada a medida"
+                  loading="lazy"
+                >
+                <span class="project-caption"><span>Cocinas</span>Diseño integral</span>
+              </button>
             </figure>
             <figure class="project-card reveal">
-              <img
-                src="assets/images/escritorio-a-medida-01.jpg"
-                alt="Escritorio a medida con panel para televisor y módulos de guardado"
-                loading="lazy"
+              <button
+                class="project-trigger"
+                type="button"
+                data-lightbox-trigger
+                data-category="Escritorios"
+                data-caption="Espacio de estudio"
+                aria-label="Ampliar imagen: escritorio, espacio de estudio"
               >
-              <figcaption><span>Escritorios</span>Espacio de estudio</figcaption>
+                <img
+                  src="assets/images/escritorio-a-medida-01.jpg"
+                  alt="Escritorio a medida con panel para televisor y módulos de guardado"
+                  loading="lazy"
+                >
+                <span class="project-caption"><span>Escritorios</span>Espacio de estudio</span>
+              </button>
             </figure>
             <figure class="project-card reveal">
-              <img
-                src="assets/images/living-biblioteca-a-medida.jpg"
-                alt="Biblioteca y panel de TV de madera clara diseñados para un living"
-                loading="lazy"
+              <button
+                class="project-trigger"
+                type="button"
+                data-lightbox-trigger
+                data-category="Livings"
+                data-caption="Biblioteca y panel"
+                aria-label="Ampliar imagen: living, biblioteca y panel"
               >
-              <figcaption><span>Livings</span>Biblioteca y panel</figcaption>
+                <img
+                  src="assets/images/living-biblioteca-a-medida.jpg"
+                  alt="Biblioteca y panel de TV de madera clara diseñados para un living"
+                  loading="lazy"
+                >
+                <span class="project-caption"><span>Livings</span>Biblioteca y panel</span>
+              </button>
             </figure>
             <figure class="project-card reveal">
-              <img
-                src="assets/images/escritorio-a-medida-02.jpg"
-                alt="Escritorio con estante abierto y panel de pared a medida"
-                loading="lazy"
+              <button
+                class="project-trigger"
+                type="button"
+                data-lightbox-trigger
+                data-category="Escritorios"
+                data-caption="Guardado funcional"
+                aria-label="Ampliar imagen: escritorio, guardado funcional"
               >
-              <figcaption><span>Escritorios</span>Guardado funcional</figcaption>
+                <img
+                  src="assets/images/escritorio-a-medida-02.jpg"
+                  alt="Escritorio con estante abierto y panel de pared a medida"
+                  loading="lazy"
+                >
+                <span class="project-caption"><span>Escritorios</span>Guardado funcional</span>
+              </button>
             </figure>
             <figure class="project-card project-tall reveal">
-              <img
-                src="assets/images/cocina-a-medida-02.jpg"
-                alt="Cocina moderna blanca y gris con muebles a medida"
-                loading="lazy"
+              <button
+                class="project-trigger"
+                type="button"
+                data-lightbox-trigger
+                data-category="Cocinas"
+                data-caption="Terminaciones laqueadas"
+                aria-label="Ampliar imagen: cocina, terminaciones laqueadas"
               >
-              <figcaption><span>Cocinas</span>Terminaciones laqueadas</figcaption>
+                <img
+                  src="assets/images/cocina-a-medida-02.jpg"
+                  alt="Cocina moderna blanca y gris con muebles a medida"
+                  loading="lazy"
+                >
+                <span class="project-caption"><span>Cocinas</span>Terminaciones laqueadas</span>
+              </button>
             </figure>
             <figure class="project-card reveal">
-              <img
-                src="assets/images/escritorio-a-medida-03.jpg"
-                alt="Escritorio de oficina con cajoneras y módulos superiores realizados a medida"
-                loading="lazy"
+              <button
+                class="project-trigger"
+                type="button"
+                data-lightbox-trigger
+                data-category="Escritorios"
+                data-caption="Oficina personalizada"
+                aria-label="Ampliar imagen: escritorio, oficina personalizada"
               >
-              <figcaption><span>Escritorios</span>Oficina personalizada</figcaption>
+                <img
+                  src="assets/images/escritorio-a-medida-03.jpg"
+                  alt="Escritorio de oficina con cajoneras y módulos superiores realizados a medida"
+                  loading="lazy"
+                >
+                <span class="project-caption"><span>Escritorios</span>Oficina personalizada</span>
+              </button>
             </figure>
           </div>
         </div>
@@ -281,6 +335,38 @@
         </div>
       </section>
     </main>
+
+    <div class="lightbox" data-lightbox hidden aria-hidden="true">
+      <div
+        class="lightbox-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Imagen ampliada de trabajo realizado"
+        data-lightbox-dialog
+      >
+        <button class="lightbox-close" type="button" data-lightbox-close aria-label="Cerrar imagen ampliada">
+          <span></span>
+          <span></span>
+        </button>
+        <button class="lightbox-arrow lightbox-prev" type="button" data-lightbox-prev aria-label="Imagen anterior">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 4 7 12l8 8"/>
+          </svg>
+        </button>
+        <figure class="lightbox-content">
+          <img data-lightbox-image src="" alt="">
+          <figcaption>
+            <span data-lightbox-category></span>
+            <strong data-lightbox-caption></strong>
+          </figcaption>
+        </figure>
+        <button class="lightbox-arrow lightbox-next" type="button" data-lightbox-next aria-label="Imagen siguiente">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m9 4 8 8-8 8"/>
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <a
       class="floating-whatsapp"
